@@ -9,7 +9,7 @@ const monedas = [
 function convertidorDeMoneda (valorusuario, monedaUsuario){
     let resultado = 0
 
-        if (valorusuario == null || monedaUsuario == null) {
+        if (valorusuario != null || monedaUsuario != null) {
             monedas.forEach(moneda => {
                 if (moneda.moneda == monedaUsuario) {
                     console.log(valorusuario, moneda.valor)
